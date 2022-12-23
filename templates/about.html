@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="{{url_for('static',filename='style2.css')}}">
+    </head>
+
+    <body>
+        <div class="section">
+        <div class="navbar">
+            <ul>
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>About Us</h1>
+                </div>
+                <div class="content">
+                    <h3>Posture Estimation for Yoga</h3>
+                    <p>Recently yoga has been gaining lots of traction in India as well as in other countries.
+                         Yoga is known for being extremely beginner friendly and encourages all round development. 
+                        It also acts as a mental health detox. Every year International Yoga Day
+                        is regligiously followed and tons of newcomers are exploring yoga.Thus we feel that these newcomers should have a helping hand in yoga. This thought led to the idea of 
+                        using cutting edge ML tech to build a platform that will guide such people. We believe this platform will
+                        enourage people to practice yoga safely while also helping them improve in it.The basic idea behind this is creating a 3d skeletal structure which will mimic user's yoga asanas and 
+                        also tell them how well they are doing. We plan to achieve this by using Keypoint_RCNN_FPN for the 2d 
+                        keypoint generation and Dialated Temporal Convolutions to convert 2d keypoints to 3d. Then we aim to use a
+                        similarity function to esitmate how well the user is doing.</p>
+
+                    <div class="button">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="{{url_for('static',filename='aboutus.jpg')}}">
+            </div>
+        </div>
+
+    </div>
+    </body>
+</html>>

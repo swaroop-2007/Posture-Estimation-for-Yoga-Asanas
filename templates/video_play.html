@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Video Play</title>
+
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{{url_for('static',filename='style4.css')}}">
+
+	</head>
+	<body style="background-color:black; color:white;">
+		
+		<div class="navbar">
+            <ul>
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+                <li><a href="#">Page 3</a></li>
+
+            </ul>
+        </div>
+
+		<div style="display: block;">
+		<center><img src="{{ url_for('video_feed') }}" width ='700px' height="400px" ></center>
+		<br>
+		<h3 style="color:white;
+					text-align:center;">Playing the video</h3>
+
+		<table style="width:100%; border:0;">
+			<tr>
+				<th>index</th>
+				<th>Embeddings</th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+			  </tr>
+			  <tr>
+				<th>{{usr_embed[0].item()}}</th>
+				<th>{{usr_embed[1].item()}}</th>
+				<th>{{usr_embed[2].item()}}</th>
+				<th>{{usr_embed[3].item()}}</th>
+				<th>{{usr_embed[4].item()}}</th>
+				<th>{{usr_embed[5].item()}}</th>
+				<th>{{usr_embed[6].item()}}</th>
+				<th>{{usr_embed[7].item()}}</th>
+				<th>{{usr_embed[8].item()}}</th>
+				<th>{{usr_embed[9].item()}}</th>
+				<th>{{usr_embed[10].item()}}</th>
+				<th>{{usr_embed[11].item()}}</th>
+				<th>{{usr_embed[12].item()}}</th>
+				<th>{{usr_embed[13].item()}}</th>
+				<th>{{usr_embed[14].item()}}</th>
+				<th>{{usr_embed[15].item()}}</th>
+			  </tr>
+			  <tr>
+				<th>{{db_embed[0]}}</th>
+				<th>{{db_embed[1]}}</th>
+				<th>{{db_embed[2]}}</th>
+				<th>{{db_embed[3]}}</th>
+				<th>{{db_embed[4]}}</th>
+				<th>{{db_embed[5]}}</th>
+				<th>{{db_embed[6]}}</th>
+				<th>{{db_embed[7]}}</th>
+				<th>{{db_embed[8]}}</th>
+				<th>{{db_embed[9]}}</th>
+				<th>{{db_embed[10]}}</th>
+				<th>{{db_embed[11]}}</th>
+				<th>{{db_embed[12]}}</th>
+				<th>{{db_embed[13]}}</th>
+				<th>{{db_embed[14]}}</th>
+				<th>{{db_embed[15]}}</th>
+			  </tr>
+			  <tr>
+				  <th>
+					  {{pwd}}
+				  </th>
+				  <th>
+					  {{cos}}
+				  </th>
+			  </tr>
+		</table>
+	</div>
+</html>
